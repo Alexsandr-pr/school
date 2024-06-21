@@ -2,32 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .heading-1 {
+      	@apply text-grey-900 text-2xl font-bold sm:text-3xl lg:text-[40px] leading-tight;
+    }
+    .heading-2 {
+      	@apply text-xl sm:text-2xl lg:text-[32px] font-semibold text-grey-900 leading-tight;
+    }
+    .heading-3 {
+      	@apply  text-lg sm:text-xl  lg:text-2xl font-semibold text-grey-900 ;
+    }
+  
+    .heading-4-subheading {
+      	@apply  text-base sm:text-lg md:text-xl  font-semibold text-grey-900 leading-relaxed;
+    }	
+  
+    .heading-5-subheading {
+      	@apply  text-base md:text-lg  font-semibold  leading-relaxed;
+    }
+  
+    .small-text {
+      	@apply font-normal text-xs md:text-sm leading-normal;
+    }
+  
+    .paragraph  {
+      	@apply text-sm sm:text-sm lg:text-base font-normal leading-relaxed;
+    }
+  
+    .paragraph-medium  {
+      	@apply  text-base font-medium leading-relaxed;
+    }
+  
+    .label {
+      	@apply font-semibold text-[10px] md:text-xs leading-normal
+    }
+  
+    .button-text {
+      	@apply font-medium text-sm leading-relaxed;
+    }
+    .blue-button {
+      	@apply text-sm py-4 px-6 text-white font-medium leading-normal rounded-lg inline-flex items-center justify-center transition-all duration-300 cursor-pointer gap-2;
+    }
+  
+    .slider-button {
+      	@apply py-2 px-4 rounded-lg bg-grey-disableColor w-[56px] h-[40px] flex justify-center items-center;
+    }
+  
+    .input { 
+      	@apply p-4 text-primary-600  focus:border-primary-500 focus:outline-none placeholder:text-grey-disableColor text-base leading-relaxed font-normal rounded-lg border border-grey-border border-solid;
+    }
+    .bg-8 {
+      	@apply rounded-lg p-2 border border-solid border-grey-border bg-grey-background;
+    }
+    .bg-8-white {
+      	@apply rounded-lg p-4 border border-solid border-grey-border bg-white;
+    }
+    .bg-16 {
+      	@apply rounded-2xl border  border-solid shadow-main p-4 border-grey-border bg-white 
+    }
+    .black-button-center {
+      	@apply text-sm leading-relaxed transition-all duration-300 bg-grey-textDark border border-solid border-transparent hover:bg-white hover:border-grey-textDark font-medium text-white p-4 text-center flex items-center justify-center
+    }
+    .black-button-border {
+      	@apply text-sm leading-relaxed transition-all duration-300 bg-white border border-solid border-transparent hover:bg-grey-textDark hover:border-transparent hover:text-grey-textDark font-medium text-white p-4 text-center flex items-center justify-center
+    }
+    .tab-button {
+      	@apply py-[18px] px-10 w-[148px] rounded-lg cursor-pointer bg-white border border-solid duration-300 transition-all border-grey-border text-sm font-normal text-gray-900 leading-normal active:border-transparent hover:bg-primary-50 active:bg-primary-50;
+    }
 }
