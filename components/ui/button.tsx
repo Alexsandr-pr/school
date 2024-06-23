@@ -15,7 +15,7 @@ const buttonVariants = cva(
         blue:
           "text-sm py-4 px-6 text-white font-medium border border-solid border-transparent hover:border-primary-500 hover:bg-white text-center hover:text-primary-500 leading-normal rounded-lg inline-flex items-center bg-primary-500 justify-center transition-all duration-300 cursor-pointer gap-2",
         dark:
-          "text-sm leading-relaxed transition-all duration-300 bg-grey-textDark border border-solid hover:text-black group border-transparent hover:bg-white hover:border-grey-textDark font-medium text-white p-4 text-center flex items-center justify-center",
+          "text-sm leading-relaxed transition-all duration-300 bg-grey-textDark border border-solid hover:text-black group border-grey-textDark hover:bg-white  font-medium text-white p-4 text-center flex items-center justify-center",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
 

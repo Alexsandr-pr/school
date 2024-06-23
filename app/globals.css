@@ -69,4 +69,8 @@
     .tab-button {
       	@apply py-[18px] px-10 w-[148px] rounded-lg cursor-pointer bg-white border border-solid duration-300 transition-all border-grey-border text-sm font-normal text-gray-900 leading-normal active:border-transparent hover:bg-primary-50 active:bg-primary-50;
     }
+    .header-input {
+        
+        @apply text-grey-700 text-xs  px-2.5 pl-10 py-3 rounded-lg border border-solid border-grey-700 w-full focus:border-primary-500 focus:outline-none;
+    }
 }
