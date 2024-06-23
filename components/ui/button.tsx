@@ -16,12 +16,12 @@ const buttonVariants = cva(
           "text-sm py-4 px-6 text-white font-medium border border-solid border-transparent hover:border-primary-500 hover:bg-white text-center hover:text-primary-500 leading-normal rounded-lg inline-flex items-center bg-primary-500 justify-center transition-all duration-300 cursor-pointer gap-2",
         dark:
           "text-sm leading-relaxed transition-all duration-300 bg-grey-textDark border border-solid hover:text-black group border-grey-textDark hover:bg-white  font-medium text-white p-4 text-center flex items-center justify-center",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+          darkBg: "text-sm leading-relaxed transition-all duration-300 bg-white border border-solid hover:text-white group border-grey-textDark hover:bg-grey-textDark  font-medium text-grey-textDark p-4 text-center flex items-center justify-center",
         link: "text-primary underline-offset-4 hover:underline",
 
       },
       size: {
-        default: "h-[48px] px-6 py-4",
+        default: "h-10 md:h-[48px] px-4 md:px-6  py-3 md:py-4",
         slider: "w-[56px] h-10 py-2 px-4",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
