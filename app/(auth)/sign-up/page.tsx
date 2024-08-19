@@ -39,7 +39,6 @@ const SignUp = () => {
     })
     
     function onSubmit(values: z.infer<typeof formSchema>) {
-
         console.log(values)
     }
 
@@ -77,5 +76,9 @@ const SignUp = () => {
         </div>
     )
 }
+
+
+
+
 
 export default SignUp

@@ -7,14 +7,13 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
+import FilterCourseSheet from './FilterCourseSheet'
 
 const Filter = () => {
     return (
         <div className="flex justify-between gap-6">
-            <Button variant={"darkBg"}>
-                <img src="/icons/filter.svg" alt="" />
-                Filter
-            </Button>
+            
+            <FilterCourseSheet/>
             <div className="flex items-center gap-4">
                 <p className='paragraph hidden 2sm:block text-grey-900'>Sort By</p>
                 <Select>

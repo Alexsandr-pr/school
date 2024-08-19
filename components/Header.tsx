@@ -9,7 +9,9 @@ const Header = () => {
         <header className='w-full border-b border-solid border-grey-border'>
             <div className="max-w-screen-xl flex justify-between gap-6 mx-auto px-4 py-3">
                 <div className="flex gap-9 items-center lg:w-5/6 xl:w-5/6">
-                    <img src="/icons/logo.svg" alt="Logo" />
+                    <Link href="/">
+                        <img src="/icons/logo.svg" alt="Logo" />
+                    </Link>
                     <Link href="/category" className='small-text hidden sm:block text-grey-700'>Categories</Link>
                     <label htmlFor="" className='relative w-full  hidden lg:block max-w-[600px]'>
                         <img src="/icons/search.svg" className='absolute top-[13px] left-3' alt="search" />

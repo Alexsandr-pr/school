@@ -95,16 +95,7 @@ const Home = () => {
             </div>
             <div className="bg-grey-background pb-16 pt-20">
                 <div className="max-w-screen-xl mx-auto px-4">
-                    <HeaderBlock title="What Our Customer Say About Us">
-                        <div className="flex items-center gap-3 md:gap-6">
-                            <Button variant={"slider"} size={"slider"}>
-                                <img className="rotate-180" src="/icons/chevron-right.svg" alt="Chevron Left" />
-                            </Button>
-                            <Button variant={"slider"} size={"slider"}>
-                                <img src="/icons/chevron-right.svg" alt="Chevron Left" />
-                            </Button>
-                        </div>
-                    </HeaderBlock>
+                    
                     <Reviews/>
                 </div>
             </div>

@@ -17,7 +17,7 @@ const buttonVariants = cva(
         dark:
           "text-sm leading-relaxed transition-all duration-300 bg-grey-textDark border border-solid hover:text-black group border-grey-textDark hover:bg-white  font-medium text-white p-4 text-center flex items-center justify-center",
           darkBg: "text-sm leading-relaxed transition-all duration-300 bg-white border border-solid hover:text-white group border-grey-textDark hover:bg-grey-textDark  font-medium text-grey-textDark p-4 text-center flex items-center justify-center",
-        link: "text-primary underline-offset-4 hover:underline",
+        
 
       },
       size: {
@@ -25,6 +25,7 @@ const buttonVariants = cva(
         slider: "w-[56px] h-10 py-2 px-4",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        paginationBtn:"p-0 flex juctify-center items-center h-10 w-10"
       },
     },
     defaultVariants: {
